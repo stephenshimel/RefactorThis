@@ -12320,6 +12320,7 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.Data.Sqlite >= 3.0.1",
+      "Microsoft.EntityFrameworkCore >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
@@ -12340,7 +12341,7 @@
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/stephen.shi/.nuget/NuGet/NuGet.Config"
+        "/Users/stephen.shi/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -12378,6 +12379,10 @@
           "Microsoft.Data.Sqlite": {
             "target": "Package",
             "version": "[3.0.1, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
