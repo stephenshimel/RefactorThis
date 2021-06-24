@@ -1,0 +1,17 @@
+/Users/stephen.shi/Desktop/Xero/RefactorThis/bin/Debug/netcoreapp2.2/appsettings.Development.json
+/Users/stephen.shi/Desktop/Xero/RefactorThis/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/stephen.shi/Desktop/Xero/RefactorThis/bin/Debug/netcoreapp2.2/RefactorThis.deps.json
+/Users/stephen.shi/Desktop/Xero/RefactorThis/bin/Debug/netcoreapp2.2/RefactorThis.runtimeconfig.json
+/Users/stephen.shi/Desktop/Xero/RefactorThis/bin/Debug/netcoreapp2.2/RefactorThis.runtimeconfig.dev.json
+/Users/stephen.shi/Desktop/Xero/RefactorThis/bin/Debug/netcoreapp2.2/RefactorThis.dll
+/Users/stephen.shi/Desktop/Xero/RefactorThis/bin/Debug/netcoreapp2.2/RefactorThis.pdb
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.csproj.AssemblyReference.cache
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.AssemblyInfoInputs.cache
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.AssemblyInfo.cs
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.csproj.CoreCompileInputs.cache
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.RazorAssemblyInfo.cache
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.RazorAssemblyInfo.cs
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.RazorTargetAssemblyInfo.cache
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.dll
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.pdb
+/Users/stephen.shi/Desktop/Xero/RefactorThis/obj/Debug/netcoreapp2.2/RefactorThis.genruntimeconfig.cache
