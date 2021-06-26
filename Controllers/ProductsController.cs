@@ -1,6 +1,10 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using RefactorThis.Models;
+using RefactorThis.Business;
+
+using System.Threading.Tasks;
+
 
 namespace RefactorThis.Controllers
 {
@@ -11,88 +15,88 @@ namespace RefactorThis.Controllers
         [HttpGet]
         public Products Get()
         {
-            return new Products();
+            return BusinessHandler.loadProducts("");
         }
 
-        [HttpGet("{id}")]
-        public Product Get(Guid id)
-        {
-            var product = new Product(id);
-            if (product.IsNew)
-                throw new Exception();
+        // [HttpGet("{id}")]
+        // public Product Get(Guid id)
+        // {
+        //     var product = new Product(id);
+        //     if (product.IsNew)
+        //         throw new Exception();
 
-            return product;
-        }
+        //     return product;
+        // }
 
-        [HttpPost]
-        public void Post(Product product)
-        {
-            product.Save();
-        }
+        // [HttpPost]
+        // public void Post(Product product)
+        // {
+        //     product.Save();
+        // }
 
-        [HttpPut("{id}")]
-        public void Update(Guid id, Product product)
-        {
-            var orig = new Product(id)
-            {
-                Name = product.Name,
-                Description = product.Description,
-                Price = product.Price,
-                DeliveryPrice = product.DeliveryPrice
-            };
+        // [HttpPut("{id}")]
+        // public void Update(Guid id, Product product)
+        // {
+        //     var orig = new Product(id)
+        //     {
+        //         Name = product.Name,
+        //         Description = product.Description,
+        //         Price = product.Price,
+        //         DeliveryPrice = product.DeliveryPrice
+        //     };
 
-            if (!orig.IsNew)
-                orig.Save();
-        }
+        //     if (!orig.IsNew)
+        //         orig.Save();
+        // }
 
-        [HttpDelete("{id}")]
-        public void Delete(Guid id)
-        {
-            var product = new Product(id);
-            product.Delete();
-        }
+        // [HttpDelete("{id}")]
+        // public void Delete(Guid id)
+        // {
+        //     var product = new Product(id);
+        //     product.Delete();
+        // }
 
-        [HttpGet("{productId}/options")]
-        public ProductOptions GetOptions(Guid productId)
-        {
-            return new ProductOptions(productId);
-        }
+        // [HttpGet("{productId}/options")]
+        // public ProductOptions GetOptions(Guid productId)
+        // {
+        //     return new ProductOptions(productId);
+        // }
 
-        [HttpGet("{productId}/options/{id}")]
-        public ProductOption GetOption(Guid productId, Guid id)
-        {
-            var option = new ProductOption(id);
-            if (option.IsNew)
-                throw new Exception();
+        // [HttpGet("{productId}/options/{id}")]
+        // public ProductOption GetOption(Guid productId, Guid id)
+        // {
+        //     var option = new ProductOption(id);
+        //     if (option.IsNew)
+        //         throw new Exception();
 
-            return option;
-        }
+        //     return option;
+        // }
 
-        [HttpPost("{productId}/options")]
-        public void CreateOption(Guid productId, ProductOption option)
-        {
-            option.ProductId = productId;
-            option.Save();
-        }
+        // [HttpPost("{productId}/options")]
+        // public void CreateOption(Guid productId, ProductOption option)
+        // {
+        //     option.ProductId = productId;
+        //     option.Save();
+        // }
 
-        [HttpPut("{productId}/options/{id}")]
-        public void UpdateOption(Guid id, ProductOption option)
-        {
-            var orig = new ProductOption(id)
-            {
-                Name = option.Name,
-                Description = option.Description
-            };
+        // [HttpPut("{productId}/options/{id}")]
+        // public void UpdateOption(Guid id, ProductOption option)
+        // {
+        //     var orig = new ProductOption(id)
+        //     {
+        //         Name = option.Name,
+        //         Description = option.Description
+        //     };
 
-            if (!orig.IsNew)
-                orig.Save();
-        }
+        //     if (!orig.IsNew)
+        //         orig.Save();
+        // }
 
-        [HttpDelete("{productId}/options/{id}")]
-        public void DeleteOption(Guid id)
-        {
-            var opt = new ProductOption(id);
-            opt.Delete();
-        }
+        // [HttpDelete("{productId}/options/{id}")]
+        // public void DeleteOption(Guid id)
+        // {
+        //     var opt = new ProductOption(id);
+        //     opt.Delete();
+        // }
     }
 }
