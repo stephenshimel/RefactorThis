@@ -27,7 +27,7 @@ namespace RefactorThis.Models
 
         public decimal _DeliveryPrice { get; set; }
 
-        [JsonIgnore] public bool IsNew { get; }
+        // [JsonIgnore] public bool _IsNew { get; }
 
         public Product(Guid Id, string Name, string Description, decimal Price, decimal DeliveryPrice)
         {
@@ -36,22 +36,11 @@ namespace RefactorThis.Models
             _Description = Description;
             _Price = Price;
             _DeliveryPrice = DeliveryPrice;
+            // _IsNew = IsNew;
         }
 
 
-        // public void Save()
-        // {
-        //     var conn = Helpers.NewConnection();
-        //     conn.Open();
-        //     var cmd = conn.CreateCommand();
 
-        //     cmd.CommandText = IsNew
-        //         ? $"insert into Products (id, name, description, price, deliveryprice) values ('{Id}', '{Name}', '{Description}', {Price}, {DeliveryPrice})"
-        //         : $"update Products set name = '{Name}', description = '{Description}', price = {Price}, deliveryprice = {DeliveryPrice} where id = '{Id}' collate nocase";
-
-        //     conn.Open();
-        //     cmd.ExecuteNonQuery();
-        // }
 
         // public void Delete()
         // {
