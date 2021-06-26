@@ -10,13 +10,15 @@ namespace RefactorThis.Business
 
     public static class BusinessHandler
     {
-        public static Products loadProducts(string where)
+        public static Products loadProducts(string name)
+
         {
+            // todo: 1. use EF. 2. add the function to search all Products whose name is name
             var Items = new List<Product>();
             var conn = Helpers.NewConnection();
             conn.Open();
             var cmd = conn.CreateCommand();
-            cmd.CommandText = $"select id from Products {where}";
+            cmd.CommandText = $"select id from Products";
 
             var rdr = cmd.ExecuteReader();
             while (rdr.Read())

@@ -13,9 +13,10 @@ namespace RefactorThis.Controllers
     public class ProductsController : ControllerBase
     {
         [HttpGet]
-        public Products Get()
+        public ObjectResult Get([FromQuery(Name = "name")] string name)
         {
-            return BusinessHandler.loadProducts("");
+
+            return new ObjectResult(BusinessHandler.loadProducts(name));
         }
 
         [HttpGet("{id}")]
